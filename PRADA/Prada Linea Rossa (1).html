@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Beauty Products for Women | PRADA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: block;
+            font-family: Benton Sans, sans-serif;
+            margin: 0;
+            line-height: inherit;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        nav {
+            height: 3pc;
+            background-color: #ffffff;
+            left: 0;
+            opacity: 1;
+            padding-left: 1.25rem;
+            padding-right: 1rem;
+            position: fixed;
+            right: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar-brand {
+            width: 127px;
+        }
+
+        .navbar-nav {
+            padding-left: 15px;
+        }
+
+        .nav-item {
+            font-size: 9pt;
+            font-weight: 700;
+            letter-spacing: .2px;
+            line-height: 14px;
+            position: relative;
+            text-transform: uppercase;
+            color: #000000;
+            cursor: pointer;
+            margin-left: 7px;
+            margin-right: 7px;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+        }
+
+        .search {
+            display: flex;
+            margin-left: auto;
+            padding-bottom: 15px;
+        }
+
+        svg {
+            margin-left: 1pc;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+            position: relative;
+            color: #000000;
+            line-height: 24px;
+            font-size: 24px;
+        }
+
+        .stick {
+            position: sticky;
+            flex-direction: row;
+            padding-left: 20px;
+            display: flex;
+            width: 100%;
+            z-index: 8;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .beauty {
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-right: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            font-size: 15px;
+            line-height: 20px;
+            align-self: center;
+        }
+
+        .lin {
+            margin-left: 10px;
+        }
+
+        .list {
+            position: relative;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .lips {
+            display: flex;
+            font-size: 9pt;
+            font-weight: 400;
+            line-height: 18px;
+            overflow-x: auto;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .face {
+            align-items: baseline;
+            font-size: 9pt;
+            font-weight: 500;
+            line-height: 1pc;
+            display: flex;
+            margin-right: 10px;
+        }
+
+        .about {
+            cursor: pointer;
+            overflow: hidden;
+            padding-bottom: 15.5px;
+            padding-top: 15.5px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 9pt;
+            font-weight: 500;
+            line-height: 1pc;
+        }
+
+        .view {
+            align-items: center;
+            display: flex;
+            margin-right: 10px;
+            font-weight: 400;
+            font-size: 9pt;
+            line-height: 18px;
+        }
+
+        div {
+            display: block;
+        }
+
+        .picture {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .lip {
+            display: flex;
+            position: relative;
+            width: 100%;
+        }
+
+        .final {
+            height: 100%;
+            min-width: 1px;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        .liim {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            right: 0;
+            top: 0;
+        }
+
+        .one {
+            left: 0;
+            top: 0;
+            pointer-events: none;
+            position: absolute;
+            padding: 25px;
+        }
+
+        .two {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .text {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1.2;
+            color: #000000;
+        }
+
+        .ton {
+            align-items: center;
+            display: flex;
+            margin-top: 1pc;
+        }
+
+        .three {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .discover {
+            line-height: 1pc;
+            text-align: left;
+            padding-left: 0;
+            padding-right: 0;
+            display: inline-block;
+            position: relative;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 4px;
+            color: #000000;
+
+        }
+
+        .dot {
+            height: 0.75rem;
+            width: 0.75rem;
+            font-size: 10px;
+            margin-right: 0.5rem;
+            border-radius: 9999px;
+            border-width: 1px;
+            display: inline-flex;
+            border: solid;
+        }
+
+        .first {
+            background-color: #000000;
+
+        }
+
+        .shadow {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .row {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .reen {
+            width: 100%;
+            padding-bottom: 10px;
+        }
+
+        ol {
+            list-style: none;
+            margin: 0;
+        }
+
+        .dil {
+            justify-content: center;
+            border-bottom-width: 1px;
+            border-top-width: 1px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .del {
+            align-items: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            display: flex;
+        }
+
+        .input {
+            border: none;
+            background: transparent;
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            appearance: none;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 14px;
+            line-height: 18px;
+            width: 100%;
+        }
+
+        .bi {
+            position: absolute;
+            right: 0;
+            margin-right: 10px;
+
+        }
+
+        .underline {
+            text-decoration-line: underline;
+            padding-left: 20px;
+        }
+
+        #hrr {
+
+            height: 2px;
+            margin-top: 7px;
+            color: black;
+            border-width: 0;
+            background-color: #000000;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cons {
+            display: flex;
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 1pc;
+            margin-top: 2pc;
+            height: 50px;
+            width: 50px;
+            padding-left: 0;
+
+        }
+
+        .social {
+            margin-right: 1px;
+            font-weight: 400;
+            line-height: 1;
+            text-transform: none;
+
+        }
+        .accordion{
+            padding-bottom: 20px;
+        }
+        .copyright{
+            align-self: center;
+            border-top-width: 1px;
+            font-size: 10px;
+            line-height: 14px;
+            padding: 24px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+                
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-4" href="HomePrada.html" target="_self"><b>PRADA</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="women.html" target="_self">WOMEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="men.html" target="_self">WOMEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bag.html" target="_self">BAGS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gift.html" target="_self">GIFTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Prada Linea Rossa (1).html">LINEA ROSSA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="beauty.html">BEAUTY AND FRAGRANCES</a>
+              </li>
+            </ul>
+          </div> 
+            <div class="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></div>
+        </div>
+    </nav>
+    <hr>
+    <div class="navbar">
+        <div class="lin">
+            <h2 class="beauty">Prada Linea Rossa</h2>
+            <div class="list">
+                <ul class="lips">
+                    <li class="face">
+                        <span class="about">View all</span>
+                    </li>
+                    <li class="view">
+                        <span class="about">Ready to wear</span>
+                    </li>
+                    <li class="view">
+                        <span class="about">Ski wear and technical gear</span>
+                    </li>
+                    <li class="view">
+                        <span class="about">Shoes</span>
+                    </li>
+                    <li class="view">
+                        <span class="about">Accessories</span>
+                    </li>
+                    <li class="view">
+                        <span class="about">Sunglasses</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="picture">
+        <div class="lip">
+            <div class="final">
+                <a class="liim">
+                    <video autoplay loop muted>
+                        <source
+                            src="https://www.prada.com/content/dam/pradanux/e-commerce/2023/03/03/Linea_Rossa/subhome/update_banner/woman/loop.mp4#t=0.001">
+                    </video>
+                </a>
+            </div>
+            <div class="one">
+                <div class="two">
+                    <h2 class="text">Ready to wear</h2>
+                    <p>Engineered garments in technological fibres draw inspiration from the natural movement and needs
+                        of the body.</p>
+                    <div class="ton">
+                        <a class="three">
+                            <span class="discover">Discover</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row p-3">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <img src="https://www.prada.com/content/dam/pradabkg_products/1/170/170256/10U6F0002/170256_10U6_F0002_S_221_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1680.1680.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Stretch jersey one-piece swimsuit</h3>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <img src="https://www.prada.com/content/dam/pradanux_products/1/129/129306/1SXZF0806/129306_1SXZ_F0806_S_191_SLF.png/_jcr_content/renditions/cq5dam.web.hebebed.1680.1680.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Polyester sleeveless top</h3>
+                <span class="dot first"></span>
+                <span class="dot second"></span>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <img src="https://www.prada.com/content/dam/pradabkg_products/1/139/139697/10UDF0002/139697_10UD_F0002_S_221_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Double jersey top</h3>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <img src="https://www.prada.com/content/dam/pradabkg_products/1/170/170255/10U6F0002/170255_10U6_F0002_S_221_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Stretch jersey swim shorts</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
+            <img class="shadow"
+                src="https://www.prada.com/content/dam/pradanux/e-commerce/2023/03/03/Linea_Rossa/subhome/women/mosaic_v2/Card_1_TB.jpg">
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
+            <img class="shadow"
+                src="https://www.prada.com/content/dam/pradanux/e-commerce/2023/03/03/Linea_Rossa/subhome/women/mosaic_v2/Card_2_TB.jpg">
+        </div>
+    </div>
+    <hr>
+    <div class="reen">
+        <ol class="dil">
+            <li class="del">Prada</li>
+            <div class="mx-2">/</div>
+            <li class="del">Womens</li>
+            <div class="mx-2">/</div>
+            <li class="del">Prada linea rossa</li>
+        </ol>
+    </div>
+    <hr>
+    <div class="underline">
+        <form><input type="email" class="input input-field line underline"><label>Insert your e-mail
+                adddress<sup>*</sup></label>
+            <i class="bi bi-arrow-right underline"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg></i>
+        </form>
+    </div>
+    <hr id="hrr">
+    <div>
+        <ol class="cons">
+            <li class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z">
+                    </path>
+                </svg></li>
+            <li class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M 15 3.296875 C 14.476563 3.523438 13.949219 3.691406 13.367188 3.746094 C 13.949219 3.410156 14.417969 2.84375 14.648438 2.226563 C 14.066406 2.5625 13.484375 2.789063 12.84375 2.902344 C 12.257813 2.339844 11.5 2 10.683594 2 C 9.109375 2 7.824219 3.242188 7.824219 4.765625 C 7.824219 4.988281 7.824219 5.214844 7.882813 5.386719 C 4.875 5.386719 2.8125 3.691406 1.414063 2 C 1.121094 2.394531 1.003906 2.902344 1.003906 3.410156 C 1.003906 4.367188 1.53125 5.214844 2.289063 5.722656 C 1.820313 5.667969 1.355469 5.554688 1.003906 5.386719 C 1.003906 5.386719 1.003906 5.386719 1.003906 5.441406 C 1.003906 6.796875 1.996094 7.921875 3.28125 8.148438 C 3.046875 8.203125 2.8125 8.261719 2.519531 8.261719 C 2.347656 8.261719 2.171875 8.261719 1.996094 8.207031 C 2.347656 9.335938 3.976563 10.632813 5.257813 10.632813 C 4.265625 11.363281 3.34375 12 1.5 12 C 1.265625 12 1.453125 12 1 12 C 2.28125 12.789063 3.800781 13 5.375 13 C 10.683594 13 13.542969 8.769531 13.542969 5.101563 C 13.542969 4.988281 13.542969 4.878906 13.542969 4.765625 C 14.125 4.367188 14.59375 3.863281 15 3.296875">
+                    </path>
+                </svg></li>
+            <li class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z">
+                    </path>
+                </svg></li>
+            <li class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                    viewBox="0 0 50 50">
+                    <path
+                        d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
+                    </path>
+                </svg></li>
+            <li class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M16.057,16.406c-0.188,0-0.282-0.094-0.47-0.188 c-1.411-0.847-3.198-1.317-5.079-1.317c-1.035,0-2.163,0.188-3.104,0.376c-0.188,0-0.376,0.094-0.47,0.094 c-0.376,0-0.658-0.282-0.658-0.658c0-0.376,0.188-0.658,0.564-0.658c1.223-0.282,2.446-0.47,3.763-0.47 c2.163,0,4.139,0.564,5.832,1.505c0.188,0.188,0.376,0.282,0.376,0.658C16.621,16.218,16.339,16.406,16.057,16.406z M17.091,13.773 c-0.188,0-0.376-0.094-0.564-0.188c-1.599-1.035-3.857-1.599-6.302-1.599c-1.223,0-2.352,0.188-3.198,0.376 c-0.188,0.094-0.282,0.094-0.47,0.094c-0.47,0-0.753-0.376-0.753-0.753c0-0.47,0.188-0.658,0.658-0.847 c1.129-0.282,2.258-0.564,3.857-0.564c2.634,0,5.079,0.658,7.149,1.881c0.282,0.188,0.47,0.47,0.47,0.753 C17.844,13.396,17.562,13.773,17.091,13.773z M18.314,10.762c-0.188,0-0.282-0.094-0.564-0.188 c-1.881-1.035-4.609-1.693-7.243-1.693c-1.317,0-2.728,0.188-3.951,0.47c-0.188,0-0.282,0.094-0.564,0.094 C5.428,9.54,5.051,9.069,5.051,8.505c0-0.564,0.282-0.847,0.658-0.941C7.215,7.188,8.814,7,10.507,7 c2.916,0,5.926,0.658,8.278,1.881c0.282,0.188,0.564,0.47,0.564,0.941C19.255,10.386,18.878,10.762,18.314,10.762z">
+                    </path>
+                </svg></li>
+            <li class="social"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                    viewBox="0 0 72 72">
+                    <path
+                        d="M54.657,19.077c0,0,8.343,9.663,8.343,27.069v3.65c0,0-10.536,6.866-13.747,6.866l-3.115-4.529	c1.936-0.867,4.577-2.372,4.577-2.372l-0.965-0.747c0,0-6.173,2.86-13.749,2.86s-13.749-2.86-13.749-2.86l-0.965,0.747	c0,0,2.641,1.505,4.577,2.372l-3.115,4.529C19.536,56.662,9,49.796,9,49.796v-3.65c0-17.406,8.343-27.069,8.343-27.069	s5.707-2.762,10.977-3.489l1.635,3.1c0,0,2.599-0.602,6.045-0.602s6.045,0.602,6.045,0.602l1.635-3.1	C48.95,16.315,54.657,19.077,54.657,19.077z M27.01,43.603c2.656,0,4.808-2.418,4.808-5.401c0-2.983-2.153-5.401-4.808-5.401	s-4.808,2.418-4.808,5.401C22.202,41.185,24.354,43.603,27.01,43.603z M44.99,43.603c2.656,0,4.808-2.418,4.808-5.401	c0-2.983-2.153-5.401-4.808-5.401c-2.656,0-4.808,2.418-4.808,5.401C40.182,41.185,42.334,43.603,44.99,43.603z">
+                    </path>
+                </svg></li>
+        </ol>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p class="footer-copyright-text">©PRADA 2007 - 2023 <span>| VAT n. 7330362708</span></p>
+        </div>
+</body>
+
+</html>
